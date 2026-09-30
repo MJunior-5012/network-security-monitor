@@ -1,0 +1,52 @@
+{
+  "events": 41,
+  "sources": 4,
+  "alerts": [
+    {
+      "rule": "port_scan",
+      "timestamp": "2026-01-01T00:00:07+00:00",
+      "source": "192.0.2.20",
+      "destination": "198.51.100.10",
+      "observed": 8,
+      "threshold": 8,
+      "window_seconds": 60,
+      "evidence_start": "2026-01-01T00:00:00+00:00",
+      "ports": [
+        21,
+        22,
+        23,
+        25,
+        53,
+        80,
+        443,
+        3389
+      ]
+    },
+    {
+      "rule": "repeated_denials",
+      "timestamp": "2026-01-01T00:00:12+00:00",
+      "source": "192.0.2.30",
+      "destination": null,
+      "observed": 5,
+      "threshold": 5,
+      "window_seconds": 60,
+      "evidence_start": "2026-01-01T00:00:00+00:00",
+      "ports": [
+        22
+      ]
+    },
+    {
+      "rule": "connection_burst",
+      "timestamp": "2026-01-01T00:00:19+00:00",
+      "source": "192.0.2.40",
+      "destination": null,
+      "observed": 20,
+      "threshold": 20,
+      "window_seconds": 60,
+      "evidence_start": "2026-01-01T00:00:00+00:00",
+      "ports": [
+        443
+      ]
+    }
+  ]
+}
